@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": ["id", "type", "attributes"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["favorite"] },
+    "attributes": {
+      "type": "object",
+      "required": ["note", "airport"],
+      "properties": {
+        "note": { "type": "string" },
+        "airport": {
+          "type": "object",
+          "required": ["id", "name", "city", "country", "iata", "icao", "latitude", "longitude", "altitude", "timezone"],
+          "properties": {
+            "id": { "type": "number" },
+            "name": { "type": "string" },
+            "city": { "type": "string" },
+            "country": { "type": "string" },
+            "iata": { "type": "string" },
+            "icao": { "type": "string" },
+            "latitude": { "type": "string" },
+            "longitude": { "type": "string" },
+            "altitude": { "type": "number" },
+            "timezone": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
