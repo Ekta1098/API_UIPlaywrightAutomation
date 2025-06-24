@@ -35,6 +35,17 @@
 
 
 
+## UI Test Scenarios
+
+| #️ | Scenario Description                                                                    |
+|---|---------------------------------------------------------------------------------------- |
+| 1️ | **Invalid login** → Enter wrong username/password → Verify error message is shown       |
+| 2 | **Valid login** → Verify dashboard loads → Products visible → Logout successfully       |
+| 3️ | **Product listing** → All products have image, price, and “Add to Cart” button          |
+| 4️ | **Add single item** → Add 1 product → Checkout → Validate pricing and thank you message |
+| 5️ | **Add multiple items** → Add 2–3 products → Checkout → Validate total price and message |
+
+
 
 
 
